@@ -15,7 +15,10 @@
 -   HTML
 -   CSS
 -   SCSS
+-   JavaScript
 
 ## Live Preview
+
+[Live Preview](https://raffledraw.vercel.app "Raffle Draw Application")
 
 ### Happy Coding
