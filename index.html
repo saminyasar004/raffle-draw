@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Raffle Draw Application</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <!-- raffle-draw section start -->
+
+        <div class="raffle-draw-section">
+            <div class="row">
+                <div class="raffle-draw-header">
+                    <h1>
+                        Raffle Draw Application Using
+                        <span>JavaScript</span>
+                    </h1>
+                </div>
+
+                <div class="raffle-draw-content">
+                    <div class="raffle-draw-input-container">
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="allNamesField"
+                                    >enter all names</label
+                                >
+                                <textarea
+                                    id="allNamesField"
+                                    cols="40"
+                                    rows="10"
+                                ></textarea>
+                                <input
+                                    class="btn btn-secondary"
+                                    type="submit"
+                                    value="show all names"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <ul id="allInputedNames">
+                                    <li>john doe</li>
+                                    <li>stive smith</li>
+                                    <li>aren twarog</li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="raffle-draw-output-container">
+                        <div class="raffle-draw-output-header">
+                            <p>output display</p>
+                        </div>
+                        <div class="raffle-draw-display">
+                            <h4 id="shuffleDisplay">stive smith</h4>
+                            <buttin id="btnTry" class="btn btn-primary"
+                                >give a try</buttin
+                            >
+                        </div>
+                        <div class="raffle-draw-winner">
+                            <ul>
+                                <li id="firstField">
+                                    first winnner: <span>rosen hunk</span>
+                                </li>
+                                <li id="secondField">
+                                    second winner: <span>john smith</span>
+                                </li>
+                                <li id="thirdField">
+                                    third winner: <span>yuxie evan</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="raffle-draw-author">
+                    <p>
+                        build with 💜 by
+                        <a href="https://saminyasar.netlify.app/"
+                            >samin yasar</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- raffle-draw section end -->
+    </body>
+</html>

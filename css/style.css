@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1dd881;
+    --secondary-color: #108ffb;
+    --js-color: #f0db4f;
+    --js-bg-color: #242424;
+    --background-color: #033333;
+    --box-bg-color: #1a5555;
+    --font-color: #ffffff;
+}
+
+::selection {
+    color: var(--font-color);
+    background: var(--secondary-color);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Arial";
+    overflow-x: hidden;
+    cursor: default;
+    color: var(--font-color);
+    background: var(--background-color);
+}
+
+.row {
+    width: 100rem;
+    margin: auto;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--font-color);
+    background: transparent;
+    border: 0.2rem solid transparent;
+    border-radius: 0.4rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+.btn-primary {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+
+.btn-secondary {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+/* raffle-draw section */
+
+.raffle-draw-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.raffle-draw-header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.raffle-draw-header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    line-height: 1.7;
+}
+
+.raffle-draw-header h1 span {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    color: var(--js-color);
+    background: var(--box-bg-color);
+}
+
+.raffle-draw-content {
+    padding: 2rem 0;
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+}
+
+/* .raffle-draw-input-container {} */
+
+.raffle-draw-input-container form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    text-transform: capitalize;
+}
+
+.form-group textarea {
+    padding: 1rem 1.5rem;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 0.4rem;
+    font-family: "Arial";
+    color: var(--font-color);
+    background-color: var(--box-bg-color);
+}
+
+.form-group textarea::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+    border-radius: 0.8rem;
+    background-color: var(--primary-color);
+}
+
+.form-group ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.form-group ul li {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    text-transform: capitalize;
+    background: var(--box-bg-color);
+}
+
+.raffle-draw-output-container {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* .raffle-draw-output-header {
+
+} */
+
+.raffle-draw-output-header p {
+    text-transform: capitalize;
+}
+
+.raffle-draw-display {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.raffle-draw-display h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* .raffle-draw-winner {} */
+
+.raffle-draw-winner ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.raffle-draw-winner ul li {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.raffle-draw-winner ul li span {
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    text-transform: capitalize;
+    background: var(--box-bg-color);
+}
+
+.raffle-draw-author {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.raffle-draw-author p {
+    text-transform: capitalize;
+}
+
+.raffle-draw-author p a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.raffle-draw-author p a:hover {
+    text-decoration: underline;
+}
