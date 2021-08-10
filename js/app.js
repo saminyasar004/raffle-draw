@@ -29,11 +29,7 @@ let currentWinnerState = "first";
 
 // Style Initialization
 [firstField, secondField, thirdField].forEach((field) => {
-    if (!field.innerText) {
-        field.style.display = "none";
-    } else {
-        field.style.display = "";
-    }
+    field.style.display = "none";
 });
 
 // AddEventListener
